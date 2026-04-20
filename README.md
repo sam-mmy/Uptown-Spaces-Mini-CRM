@@ -62,7 +62,7 @@ A full‑stack Lead Management CRM built using **React, Node.js, Express, MySQL,
 
 ```
 git clone git@github.com:sam-mmy/Uptown-Spaces-Mini-CRM.git
-cd project-folder
+cd Uptown-Spaces-Mini-CRM
 ```
 
 ## OR
