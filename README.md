@@ -378,21 +378,20 @@ styles/
 
 # Assumptions
 
-- Authentication not required as per assignment
-- Login, Logout or Register functionalities not required
-- No Update, Delete for notes as not required in assignment
-- No need for delete Leads as not required in assignment
-- No Need of Database Migrations as Only have two tables
-- Status workflow limited to:
+The following implementation decisions were made based on the scope of the assignment document:
 
-```
+- Authentication (Login / Logout / Register) was not implemented as it was not part of the assignment requirements.
 
-New
-Contacted
-Site Visit
-Closed
+- Update and Delete operations for Notes were not implemented since the assignment only required adding and viewing notes.
 
-```
+- Delete Lead functionality was not implemented because it was not specified in the assignment scope. However, soft delete support is already included in the database schema (`deleted_at` column) for future extensibility.
+
+- TypeScript was not used as the assignment did not specify a requirement for it.
+
+- Database migrations were not implemented since the schema consists of only two tables and was created directly using SQL for simplicity.
+
+- Lead status workflow is limited to the following stages as defined in the assignment:
+
 
 ---
 
