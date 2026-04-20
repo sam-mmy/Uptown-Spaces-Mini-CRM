@@ -391,8 +391,15 @@ The following implementation decisions were made based on the scope of the assig
 - Database migrations were not implemented since the schema consists of only two tables and was created directly using SQL for simplicity.
 
 - Lead status workflow is limited to the following stages as defined in the assignment:
+  
+```
 
+New
+Contacted
+Site Visit
+Closed
 
+```
 ---
 
 # Author
