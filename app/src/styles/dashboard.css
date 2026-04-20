@@ -1,0 +1,67 @@
+/* DASHBOARD LAYOUT FIX */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 20px;
+}
+
+/* CHART GRID */
+
+.dashboard-chart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 24px;
+}
+
+/* KPI CARD */
+
+.dashboard-kpi-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 170px;
+
+  box-shadow:
+    0px 6px 18px rgba(0, 0, 0, 0.05),
+    0px 18px 32px rgba(0, 0, 0, 0.04);
+}
+
+/* PIE CARD */
+
+.dashboard-chart-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+
+  box-shadow:
+    0px 6px 18px rgba(0, 0, 0, 0.05),
+    0px 18px 32px rgba(0, 0, 0, 0.04);
+}
+
+/* FULL WIDTH BAR CHART */
+
+.full-width-chart {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
