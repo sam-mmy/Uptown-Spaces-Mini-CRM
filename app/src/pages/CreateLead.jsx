@@ -1,5 +1,14 @@
 import { useState } from "react";
 
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import { leadValidationSchema } from "../validations/leadValidation";
+import { createLead } from "../services/leadService";
+
+import { useNavigate } from "react-router-dom";
+
+
 // ErrorInfoBar component
 function ErrorInfoBar({ message, onClose }) {
   if (!message) return null;
@@ -40,14 +49,6 @@ function ErrorInfoBar({ message, onClose }) {
     </div>
   );
 }
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-
-import { leadValidationSchema } from "../validations/leadValidation";
-import { createLead } from "../services/leadService";
-
-import { useNavigate } from "react-router-dom";
-
 
 function CreateLead() {
   const navigate = useNavigate();
