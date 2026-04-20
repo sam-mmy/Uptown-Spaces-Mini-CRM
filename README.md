@@ -61,13 +61,13 @@ A full‑stack Lead Management CRM built using **React, Node.js, Express, MySQL,
 ## Step 1 — Clone Repository
 
 ```
-git clone <your-repository-url>
+git clone git@github.com:sam-mmy/Uptown-Spaces-Mini-CRM.git
 cd project-folder
 ```
 
 ## OR
 
-Open the unzipped project folder
+Open the unzipped project folder in Code Editor
 
 ---
 
